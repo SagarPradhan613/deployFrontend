@@ -1,0 +1,238 @@
+/* Base styles for .task-container */
+.task-container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 3%;
+  margin: 2%;
+  border-radius: 30px;
+}
+
+/* Styles for .task-container when 'light' class is present */
+.task-container.light {
+  background-color: white;
+}
+
+/* Styles for .task-container when 'dark' class is present */
+.task-container.dark {
+  background-color: #201825;
+  color: white;
+}
+
+/* Styles for .taskDelete when 'dark' class is present */
+.taskDelete.dark {
+  background-color: #384b55;
+}
+
+/* Styles for .addBtn */
+.addBtn {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.2s ease;
+  border-radius: 70%;
+}
+
+.addBtn:active {
+  background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+/* Styles for .addBtn in 'light' theme */
+.addBtn.light {
+  background-color: #48abe0;
+  box-shadow: 0 2px 4px darkslategray;
+}
+
+/* Styles for .addBtn in 'dark' theme */
+.addBtn.dark {
+  background-color: #384b55;
+  box-shadow: 0 2px 4px rgb(75, 127, 127);
+}
+
+/* Styles for .filter-container */
+.filter-container {
+  padding-top: 6%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styles for .filterButton */
+.filterButton {
+  flex: 1;
+  width: auto;
+  padding: 10px;
+  background-color: #48abe0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1%;
+  box-shadow: 0 2px 4px darkslategray;
+  border-radius: 30px;
+}
+
+/*styles for when filter button is active */
+.filterButton:active {
+  background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+/* Styles for .filterButton when 'dark' class is present */
+.filterButton.dark {
+  background-color: #384b55;
+}
+
+
+
+/* Styles for .taskButton-container */
+.taskButton-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styles for .taskButton */
+.taskButton {
+  flex: 1;
+  width: auto;
+  padding: 10px;
+  background-color: #48abe0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1% 1% 0 1%;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px darkslategray;
+}
+
+/* styles for taskButton when active */
+.taskButton:active {
+  background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+/* Styles for .taskButton when 'dark' class is present */
+.taskButton.dark {
+  background-color: #384b55;
+}
+
+/* Styles for .taskDelete-container */
+.taskDelete-container {
+  position: relative;
+}
+
+/* Styles for .taskDelete */
+.taskDelete {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  background-color: #48abe0;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 65px;
+  width: 65px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 70%;
+}
+/* styles for task delete active */
+.taskDelete:active {
+  background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+/* Styles for .taskDelete when 'dark' class is present */
+.taskDelete.dark {
+  background-color: #384b55;
+}
+
+/* Styles for .taskTitle */
+.taskTitle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Styles for .taskDescription */
+.taskDescription {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Styles for modal box */
+.modalBox{
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1% 1% 0 1%;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px darkslategray;
+}
+
+.modalBox.light{
+  background-color: #48abe0;
+}
+.modalBox.dark{
+  background-color: #384b55;
+}
+.modal-body{
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+.modal-inputs{
+  border-radius: 20px;
+  padding: 10px 10px 10px 15px;
+}
+.modal-content{
+  border-radius: 30px;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer{
+  border: none;
+}
+.modal-content.dark{
+  background-color: #201825;
+}
+.btn-close.dark{
+  background-color:  #384b55;
+  border-radius: 30px;
+}
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .filter-container {
+    padding-top: 20vw;
+  }
+}
+
+/* Styles for tablets (e.g., iPad in portrait mode) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .filter-container {
+    padding-top: 12vw;
+  }
+}
+
+/* Styles for desktop and larger screens */
+@media (min-width: 1025px) {
+  .filter-container {
+    padding-top: 6vw;
+  }
+}

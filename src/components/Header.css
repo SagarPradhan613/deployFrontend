@@ -1,0 +1,23 @@
+#light,#dark {
+  color: white;
+}
+.mode-light{
+  background-color: #48abe0;;
+}
+.mode-dark{
+  background-color: #201825;
+}
+.navbar{
+  border-radius: 20px;
+  z-index: 2;
+  position: fixed;
+  width: 98%;
+  padding: 10px;
+  top: 20px;
+  left: 1%; 
+  right: 1%; 
+  margin: 0 auto;
+}
+.btn{
+  border-radius: 10px;
+}
